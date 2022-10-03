@@ -2,31 +2,38 @@
 
 package manipulaficheiros;
 
+import java.io.File;
+
 
 class Ficheiro {
 
     static void criaFicheiro() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+      
     }
 
     static void verificaSeExiste() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+     
     }
 
     static void escreveNoFinalFicheiro() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    
     }
 
     static void escreveFicheiroNovo() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    
     }
 
     static void mostraConteudoFicheiro() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    
     }
 
     static void mostraListaFicheiros() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        File ficheiro = new File("C:\\Users\\mtereso\\Desktop\\TI827\\0816\\FicheirosJava\\FicheirosJava");
+        File [] lista = ficheiro.listFiles();
+        System.out.println(">>> Lista de Ficheiros <<<");
+        for(int x=0;x<lista.length;x++){
+            System.out.println(lista[x].getName());
+        }
     }
     
 }
